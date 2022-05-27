@@ -1,0 +1,12 @@
+<h1>Lista de atendimentos</h1>
+
+{{#each atendimentos}}
+    ID do atendimento: {{id}}<br>
+    Nome: {{nome}}<br>
+    CPF: {{cpf}}<br>
+    Idade: {{idade}}<br>
+    Tipo de atendimento: {{tipo_atendimento}}<br>
+    Cadastrado: {{#formatDate createdAt}}{{/formatDate}}<br>
+    <a href="/del-atendimento/{{id}}"><button>Cancelar atendimento</button></a>
+    <hr>
+{{/each}}
